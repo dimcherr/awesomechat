@@ -13,10 +13,41 @@ html, body {
 }
 
 .user-list {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100vh;
-  min-width: 15em;
-  padding: 2rem;
+  //min-width: 15em;
   overflow: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  margin: 5.6rem 0.75rem;
+}
+
+.list-group {
+  position: relative;
+  border-radius: 8px 8px 8px 8px !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: flex-end;
+  // min-width: 10rem;
+//  justify-content: flex-end !important;
+  background-color: #00000077 !important;
+  z-index: 9 !important;
+  padding: 0.75rem;
+}
+
+.list-group-item {
+  background-color: transparent !important;
+  border: 0;
+  margin: 0;
+  padding: 0.2rem;
+  text-align: right;
+  z-index: 10;
+  color: #fff;
+  // z-index: 3;
 }
 
 .message-form {
@@ -38,6 +69,7 @@ html, body {
   position: relative;
   align-self: flex-end;
   max-width: 40em;
+  min-width: 20em;
   flex: 1;
   height: 100vh;
   padding: 16px;
@@ -52,14 +84,15 @@ html, body {
 
   flex: 1;
   
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: 250px;
+  grid-auto-columns: 250px;
 }
 
 .video-container {
   position: relative;
-  height: 250px;
   width: 250px;
+  height: 250px;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +101,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .video-canvas {
@@ -85,7 +118,36 @@ html, body {
 .stream-group {
   display: flex;
   flex-direction: column;
-  padding: 2.6rem;
+  //padding: 2.6rem;
+}
+
+.video-buttons {
+  margin-bottom: 2.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .stream-group {
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .video-buttons {
+    z-index: 1;
+    padding-top: 1rem;
+  }
+  .messenger {
+    margin-top: 20rem;
+    height: calc(100vh - 20rem);
+    padding: 0px 8px;
+    z-index: 2;
+    color: #fff;
+    background-color: #00000077;
+  }
 }
 
 @import "./message.scss";

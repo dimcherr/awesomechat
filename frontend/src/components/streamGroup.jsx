@@ -196,7 +196,7 @@ class StreamGroup extends Component {
       <div className="stream-group">
         <Stream user={this.props.user} source={localSource} muted={true} />
         <div className="call-grid">{this.renderRemotes()}</div>
-        <div className="btn-group" role="group" aria-label="First group">
+        <div className="btn-group video-buttons" role="group" aria-label="First group">
           {this.getControlButtons().map(b => <button key={b.key} onClick={b.onClick} type="button" className={`control-button btn ${b.className}`}><i className="material-icons">{b.icon}</i></button>)}
         </div>
       </div>

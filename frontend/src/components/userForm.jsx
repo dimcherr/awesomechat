@@ -25,10 +25,10 @@ class UserForm extends Form {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="m-4" onSubmit={this.handleSubmit}>
         {this.renderInput("username", "", {
           autoFocus: true,
-          placeholder: "Enter your nickname"
+          placeholder: "Enter your nickname",
         })}
         {this.renderButton("Enter chat")}
       </form>
