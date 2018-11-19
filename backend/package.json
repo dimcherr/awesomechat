@@ -1,0 +1,20 @@
+{
+  "name": "awesomechat-backend",
+  "version": "0.8.0",
+  "description": "test task for fora soft",
+  "private": true,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Dmitriy Barabanov",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

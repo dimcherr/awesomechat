@@ -1,0 +1,31 @@
+.message-container {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.message-body {
+  flex: 1;
+}
+
+.message-text {
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.message-date {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.message-sender {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.message-input {
+  margin-right: 0.5em;
+}
+
+.message-input-container {
+  display: flex;
+}
