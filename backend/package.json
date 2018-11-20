@@ -4,7 +4,8 @@
   "description": "test task for fora soft",
   "private": true,
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "production": "node index.js"
   },
   "author": "Dmitriy Barabanov",
   "dependencies": {

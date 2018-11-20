@@ -33,3 +33,10 @@ yarn-error.log*
 # config
 config.js
 
+# keys
+*.pem
+
+# docker
+Dockerfile
+.dockerignore
+docker-compose.yml
